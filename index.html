@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Times de Futebol</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="theme-switcher">
+            <span id="sun-icon">☀️</span>
+            <span id="moon-icon">🌒</span>
+        </div>
+
+        <header>
+            <img src="https://img.icons8.com/color/96/000000/football2.png" alt="Ícone de Bola de Futebol"
+                class="logo" />
+            <h1>Sorteador de Times</h1>
+            <p>Monte seus times de forma justa e aleatória!</p>
+        </header>
+
+        <main class="settings-card">
+            <div class="input-group">
+                <label for="player-names">1. Liste os jogadores (um por linha)</label>
+                <textarea id="player-names" rows="10" placeholder="Cristiano Ronaldo
+Lionel Messi
+Neymar Jr.
+..."></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="team-size">2. Jogadores por time</label>
+                <input type="number" id="team-size" value="5" min="2">
+            </div>
+
+            <button id="draw-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-shuffle">
+                    <polyline points="16 3 21 3 21 8"></polyline>
+                    <line x1="4" y1="20" x2="21" y2="3"></line>
+                    <polyline points="21 16 21 21 16 21"></polyline>
+                    <line x1="15" y1="15" x2="21" y2="21"></line>
+                    <line x1="4" y1="4" x2="9" y2="9"></line>
+                </svg>
+                Sortear Times
+            </button>
+        </main>
+
+        <section id="results-section" class="hidden">
+            <h2>Times Sorteados</h2>
+            <div id="teams-container"></div>
+            <div id="leftovers-container" class="hidden">
+                <h3>Time de Fora (Espera)</h3>
+                <ul id="leftovers-list"></ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>Developed by Daniel Dutra.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
