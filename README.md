@@ -36,4 +36,10 @@ Quem joga aquela racha com os amigos sabe: dividir os times às vezes vira uma n
 
 ---
 
+## Preview
+
+![Pré-visualização](https://i.imgur.com/fNBZQ66.png)
+
+---
+
 Feito com ♥ por quem ♥ o fut.
